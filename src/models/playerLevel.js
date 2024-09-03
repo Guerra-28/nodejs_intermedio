@@ -1,4 +1,4 @@
-export const playerLevel = (sequelize, DataTypes) => {
+export const modelPlayerLevel = (sequelize, DataTypes) => {
   return sequelize.define(
     "PlayerLevel",
     {

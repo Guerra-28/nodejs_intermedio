@@ -1,6 +1,6 @@
-export const level = (sequelize, DataTypes) => {
+export const modelLevel = (sequelize, DataTypes) => {
   return sequelize.define(
-    "Nivel",
+    "Level",
     {
       id: {
         type: DataTypes.INTEGER,
@@ -17,7 +17,7 @@ export const level = (sequelize, DataTypes) => {
       },
     },
     {
-      tableName: "nivel",
+      tableName: "level",
       timestamps: true,
     }
   );

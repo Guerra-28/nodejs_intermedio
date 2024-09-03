@@ -1,4 +1,4 @@
-export const player = (sequelize, DataTypes) => {
+export const modelPlayer = (sequelize, DataTypes) => {
   return sequelize.define(
     "Player",
     {
