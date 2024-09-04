@@ -1,4 +1,4 @@
-import { PlayerLevel } from "../database";
+import { PlayerLevel } from "../database/index.js";
 
 export const gameScore = async (req, res) => {
   try {

@@ -1,4 +1,4 @@
-import { Level } from "../database";
+import { Level } from "../database/index.js";
 
 export const addLevel = async (req, res) => {
   try {
@@ -14,8 +14,8 @@ export const addLevel = async (req, res) => {
 
 export const getLevels = async (req, res) => {
   try {
-    const niveles = await Level.findAll();
-    res.status(200).json({ message: "Lista de niveles", result: niveles });
+    const levels = await Level.findAll();
+    res.status(200).json({ message: "Lista de niveles", result: levels });
   } catch (error) {
     res.status(500).json({ message: error.message, result: null });
   }
