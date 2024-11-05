@@ -3,7 +3,7 @@ import { addLevel, getLevels } from "../controllers/levelController.js";
 
 export const levelRouter = Router();
 
-levelRouter.post("/", addLevel);
-levelRouter.get("/", getLevels);
+levelRouter.post("/create", addLevel);
+levelRouter.get("/get", getLevels);
 
 //export default router;

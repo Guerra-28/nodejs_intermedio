@@ -6,7 +6,7 @@ import {
 
 export const playerLevelRouter = Router();
 
-playerLevelRouter.post("/", gameScore);
-playerLevelRouter.get("/:cedula", getScoreByPlayer);
+playerLevelRouter.post("/save-score", gameScore);
+playerLevelRouter.get("/get/:cedula", getScoreByPlayer);
 
 //export default router;

@@ -7,7 +7,9 @@ export const addPlayer = async (req, res) => {
     const hasPlayer = await Player.findByPk(cedula);
 
     if (hasPlayer) {
-      return res.status(409).json({ message: "El jugador ya existe" });
+      return res
+        .status(409)
+        .json({ message: "El jugador ya existe", result: null });
     }
 
     const newPlayer = await Player.create({ cedula, nombre, email });
